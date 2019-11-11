@@ -1,0 +1,15 @@
+
+.contact
+{
+  background: rgba(199, 219, 224, 0.3);
+  border-left: 6px solid blue;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 6px 6px 2px 1px rgba(36, 37, 37, 0.3);
+}
+.more
+{
+  background: rgba(199, 219, 224, 0.3);
+  border-left: 6px solid purple;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 6px 6px 2px 1px rgba(36, 37, 37, 0.3);
+}
