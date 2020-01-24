@@ -11,7 +11,7 @@
 }
 .tooltipColl .previewColl {
   min-width:200px;
-  max-width:350px;
+  max-width:300px;
   top:50%;
   left:100%;
   margin-left:20px;
@@ -30,11 +30,12 @@
 }
 
 .tooltipColl:hover .previewColl {
-  visibility:visible; opacity:1;
+  visibility:visible; 
+  opacity:1;
 }
 
 .tooltipColl .previewColl img {
-  width:350px;
+  width:300px;
   border-radius:8px 8px 0 0;
 }
 .tooltipColl .descriptif {

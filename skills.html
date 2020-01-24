@@ -73,6 +73,20 @@
               <div class="progress">            
                 <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated" pourcent="50" role="progressbar" style="width: 0%; height: 35px; " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
+          <!-- debut progressbar -->    
+          <label for="PHP">PHP <span class="pourcent" id="p16" pourcent="50">1</span>
+            <span id="fp1" style="color:#cb2025;">%</span></label>            
+              <div class="progress">            
+                <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated" pourcent="50" role="progressbar" style="width: 0%; height: 35px; " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+          <!-- fin progressbar --> 
+          <!-- debut progressbar -->    
+          <label for="SQL">SQL <span class="pourcent" id="p17" pourcent="30">1</span>
+            <span id="fp1" style="color:#cb2025;">%</span></label>            
+              <div class="progress">            
+                <div id="bar7" class="progress-bar progress-bar-striped progress-bar-animated" pourcent="30" role="progressbar" style="width: 0%; height: 35px; " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+          <!-- fin progressbar --> 
         </div>
         <!-- fin progressbar et fin premier bloc--> 
         <!-- second bloc-->
@@ -182,25 +196,25 @@
               <caption><span class="titleCap badge badge-secondary">Projet d'équipe</span></caption>
               <table class="table">
                 <tr>
-                  <th class="tooltipColl">Site vitrine - Mégastudio
+                  <th class="tooltipColl">Mégastudio
                   <a class="previewColl" href="https://la-manu-amiens-promo-3.github.io/MegaStudio/ "><img src="assets/img/megastudio.png">
-                  <p class ="description">Nous avons créer ce site d'après une demande client avec un cahier des charges. Il s'agit d'un site vitrine pour faire connaitre un studio
+                  <p class ="description">Site vitrine - Nous avons créer ce site d'après une demande client avec un cahier des charges. Il s'agit d'un site vitrine pour faire connaitre un studio
                   d'enregistrement ainsi que ces services.</p></tr>
                   </a></th>
                 <tr>
                 <tr>
-                  <th class="tooltipColl">Site vitrine responsive - StartUp WeekEnd
+                  <th class="tooltipColl">StartUp WeekEnd
                   <a class="previewColl" href="https://la-manu-amiens-promo-3.github.io/Bootstrap-StartUpWeekEnd/"><img src="assets/img/startup bootstrap.png">
-                  <p class ="description">Nous avons repris le site vitrine d'une précédente. Donc cahier des charges établis. Nous avons du nous adapter et mettre en place
+                  <p class ="description">Site vitrine responsive - Nous avons repris le site vitrine d'une précédente. Donc cahier des charges établis. Nous avons du nous adapter et mettre en place
                   le nécessaire pour rentre le site responsive. Notamment avec du Bootstrap.</p></tr>
                   </a></th>
                 <tr>
-                  <th class="tooltipColl">Site de e-commerce - CollectionBox
+                  <th class="tooltipColl">CollectionBox
                   <a class="previewColl" href="https://la-manu-amiens-promo-3.github.io/collectionBox/"><img src="assets/img/collectionBox.png">
-                  <p class ="description">Nous avons conçu de A à Z un site de e-commerce allant jusqu'à l'acte d'achat. Il comprend plusieurs catégories et l'ajout d'article se fait automatiquement
+                  <p class ="description">Site e-commerce - Nous avons conçu de A à Z un site de e-commerce allant jusqu'à l'acte d'achat. Il comprend plusieurs catégories et l'ajout d'article se fait automatiquement
                   tout comme le total de la commande. Les pages sont générés en fonctions de la catégorie. Seul sur la page d'accueil, l'ensemble des articles est affichés.</p></tr>
                   </a></th>
-                <caption><span class="titleCap badge badge-secondary">Projet en cours : Projet Final de Formation DWWM</span></caption>
+                <caption><span class="titleCap badge badge-secondary">Projet Final de Formation DWWM(en cours)</span></caption>
                 <table class="table">
                 <tr>
                   <th class="tooltipColl">Say Me
@@ -208,6 +222,16 @@
                   <p class ="description">Je travail actuellement sur un projet qui a pour but de valider ma formation de développeur web.
                   Je vais donc proposer un site communautaire d'avis de consommateur sur des produits de grandes distributions comme des produits hight-tech et autres...
                   En parallèle, il y aura un tchat pour en discuter entre utilisateur et futur utilsateur mais également sur d'autres sujets.</p></tr>
+                  </a></th>
+                <tr>
+              </table>
+              <caption><span class="titleCap badge badge-secondary">Salon / Forum </span></caption>
+              <table class="table">
+                <tr>
+                  <th class="tooltipColl">Les Numériquelles
+                  <a class="previewColl" href=https://www.linkedin.com/posts/st%C3%A9phanie-albrecht-99b2a012a_numaezriquelles-amiens-femmes-activity-6598652881082159105-zpue><img src="assets/img/numeriquelles.png">
+                  <p class ="description">Présentes sur ce forum avec quelques collègues apprenantes et Sarah Louvet pour représenter l'école. Mais principalement démontrer qu'aujourd'hui, les métiers du numériques ne sont plus
+                  exclusivement masculin. Nous avons accueilli des collègiennes et lycéennes ainsi nous leur avons proposés de participer à des Kahoot sur les femmes et le numérique. </p></tr>
                   </a></th>
                 <tr>
               </table>
@@ -268,7 +292,7 @@ $( ".pourcent" ).each(function() {
   var delta = Math.ceil((duree * 1000) / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
   var id = $( this ).attr("id");
   var node =  document.getElementById(id); // On récupère notre noeud où sera rafraîchi la valeur du compteur
-  
+  console.log(node);
   function countdown() {
     node.innerHTML = ++cpt;
     if( cpt < n ) { // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
